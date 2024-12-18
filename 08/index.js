@@ -22,11 +22,14 @@ const usuarios = [
 ];
 console.log(usuarios.length);
 for (item of usuarios) {
-  if (item.pets.length < 1) {
-    console.log(`sou ${item.nome} e não tenho pets`);
-  } else if (item.pets.length > 1) {
-    console.log(`sou ${item.nome} e tenho ${item.pets.length} pets`);
+  const { pets, nome } = item
+  if (pets.length > 0) {
+    if (pets.length > 1) {
+      console.log(`sou ${nome} e tenho ${pets.length} pets`)
+    } else {
+      console.log(`sou ${nome} e tenho ${pets.length} pet.`)
+    }
   } else {
-    console.log(`sou ${item.nome} e tenho ${item.pets.length} pet`);
+    console.log(`Sou ${nome} e não tenho pets`)
   }
 }
