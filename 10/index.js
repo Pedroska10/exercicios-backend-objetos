@@ -33,31 +33,49 @@ jose.carrinho = [
 // b. Adicione dois notebooks para o Carlos
 carlos.carrinho = [
   {
-    item: notebook,
-    quantidade: 2,
+    item: {
+      nome: notebook,
+      valorEmCentavos: 399990
+    },
+    quantidade: 2
   },
 ];
 
 // c. Adicione um teclado, dois cabos usb, um carregador, um mouse e um monitor para a Patricia
 patricia.carrinho = [
   {
-    item: teclado,
+    item: {
+      nome: teclado,
+      valorEmCentavos: 50000
+    },
+    quantidade: 1
+  },
+  {
+    item: {
+      nome: caboUsb,
+      valorEmCentavos: 1990
+    },
+    quantidade: 2
+  },
+  {
+    item: {
+      nome: carregador,
+      valorEmCentavos: 4590
+    },
     quantidade: 1,
   },
   {
-    item: caboUsb,
-    quantidade: 2,
+    item: {
+      nome: mouse,
+      valorEmCentavos: 23000
+    },
+    quantidade: 1
   },
   {
-    item: carregador,
-    quantidade: 1,
-  },
-  {
-    item: mouse,
-    quantidade: 1,
-  },
-  {
-    item: monitor,
+    item: {
+      nome: monitor,
+      valorEmCentavos: 129900
+    },
     quantidade: 1,
   },
 ];
@@ -65,23 +83,28 @@ patricia.carrinho = [
 // d. Adicione cinco webcams para o Renato
 renato.carrinho = [
   {
-    item: webcam,
-    quantidade: 5,
+    item: {
+      nome: webcam,
+      valorEmCentavos: 80000
+    },
+    quantidade: 5
   },
 ];
 
 // e. Adicione uma webcam, dois cabos usb e um monitor para o Roberto
 roberto.carrinho = [
   {
-    item: webcam,
-    quantidade: 1,
+    item: {
+      nome: webcam,
+      valorEmCentavos: 80000
+    },
+    quantidade: 1
   },
   {
-    item: caboUsb,
-    quantidade: 2,
-  },
-  {
-    item: monitor,
-    quantidade: 1,
+    item: {
+      nome: caboUsb,
+      valorEmCentavos: 1990
+    },
+    quantidade: 2
   },
 ];
